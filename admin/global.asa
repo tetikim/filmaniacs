@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+use strict;
+use DBI;
+use CGI;
+use JSON::XS;
+use App::Filmaniacs::Constants();
+
+#are we login?
+sub Script_OnStart { }
+
+#return the session where admin_id saved.
+sub amilogin {
+    return $Session->{admin_id};
+}
+
+#db connection
+sub connect_db {
+    my $dbh = DBI -> connect("dbi:Pg:dbname=websites_dev;host=192.168.100.252;port=5432", "su_anon", "", { AutoCommit => 1, pg_server_prepare => 0, pg_enable_utf8 => 1 }) || die DBI->errstr."\n";
+}
+
+1;

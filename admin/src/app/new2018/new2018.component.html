@@ -1,0 +1,25 @@
+<div class="back">
+        <a routerLink="/movies" routerLinkActive="active"><i class="fa fa-arrow-left"></i></a>
+</div>
+
+<form class="new2018form" name="new2018" method="post" autocomplete="off" action="/newmovie/">
+    <h1> Add Movie</h1>
+
+    <mat-form-field class="input-wrapper">
+        <input matInput type="text" name="new2018" [(ngModel)]="value_title" placeholder="Title">
+    </mat-form-field>
+
+    <mat-form-field class="input-wrapper">
+        <input matInput type="text" name="new2018" [(ngModel)]="value_description" placeholder="Description">
+    </mat-form-field>
+
+    <mat-form-field class="input-wrapper">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date"  name="new2018" [(ngModel)]="value_date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-slide-toggle name=new2018 class="option" [(ngModel)]="value_new">New</mat-slide-toggle>
+
+    <button id="submitbtn" type="submit" (click)="getData()"><i class="fa fa-check"></i></button>
+</form>

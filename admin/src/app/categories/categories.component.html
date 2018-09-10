@@ -1,0 +1,34 @@
+<!-- button for new category creation-->
+<div class="addcategory">
+	<a routerLink="/category" routerLinkActive="active"><i class="fa fa-plus"></i></a>
+</div>
+
+<div class="tableFilter">
+	<!-- Filter for categories -->
+	<mat-form-field>
+		<input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+	</mat-form-field>
+	
+	<!-- Table witch displays data from database, edit categories and save the changes  -->
+	<table mat-table class="categoryTable" [dataSource]="categories" matSort>
+		<ng-container matColumnDef="name">
+			<th mat-header-cell *matHeaderCellDef  mat-sort-header> Name </th>
+			<td mat-cell *matCellDef="let categories">     
+				<input class="formEdit" type="text" [(ngModel)]="categories.name" [disabled]="!categories.isEditable"/>
+			</td>
+		</ng-container>
+		<ng-container matColumnDef="actionsColumn">
+			<th mat-header-cell *matHeaderCellDef></th>
+			<td mat-cell *matCellDef="let categories">
+				<button (click)="categories.isEditable=!categories.isEditable" mat-icon-button color="primary" focusable="false" *ngIf="!categories.isEditable"><i class="fa fa-pencil mat-icon"></i></button>
+				<button *ngIf="categories.isEditable" mat-icon-button color="primary" focusable="false" (click)="categories.isEditable=!categories.isEditable"><i class="fa fa-check mat-icon"></i></button>	
+			</td>
+		</ng-container>
+
+		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+		<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+	</table>
+
+	<mat-paginator [pageSizeOptions]="[5, 10, 100]" showFirstLastButtons></mat-paginator>
+</div> 
+

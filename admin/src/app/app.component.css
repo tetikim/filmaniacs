@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; }
+
+sidenav {
+    position: absolute;
+    width: 200px;
+    height: calc(100% - 65px);
+    box-shadow: 2px 0 3px -1px grey;
+}
+
+content {
+    display: block;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}

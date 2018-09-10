@@ -1,0 +1,30 @@
+<div class="addmovie">
+	<a routerLink="/new2018" routerLinkActive="active"><i class="fa fa-plus"></i></a>
+</div>
+
+<div class="tableFilter">
+
+	<mat-form-field class="input-wrapper">	
+		<input class="form-control" matInput (keyup)="applyFilter($event.target.value)" placeholder="Search" value="" autocomplete="off">
+	</mat-form-field>
+
+	<table mat-table class="mat-elevation-z8" mat-table [dataSource]="movies" matSort>
+		<ng-container matColumnDef="title">		
+			<th mat-header-cell *matHeaderCellDef  mat-sort-header> Title </th>
+			<td mat-cell *matCellDef="let category">{{movies.title}}</td>
+		</ng-container>
+		<ng-container matColumnDef="description">		
+				<th mat-header-cell *matHeaderCellDef  mat-sort-header> Description </th>
+				<td mat-cell *matCellDef="let category">{{movies.description}}</td>
+		</ng-container>
+		<ng-container matColumnDef="time">		
+			<th mat-header-cell *matHeaderCellDef  mat-sort-header> Time </th>
+			<td mat-cell *matCellDef="let category">{{movies.time}}</td>
+		</ng-container>
+
+		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+		<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+	</table>
+
+	<mat-paginator class="pages" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>

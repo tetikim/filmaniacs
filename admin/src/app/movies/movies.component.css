@@ -1,0 +1,66 @@
+.tableFilter {
+	width: 500px;
+  margin: 70px auto 0;
+}
+
+td.mat-cell:last-child, td.mat-footer-cell:last-child, th.mat-header-cell:last-child {
+	padding-right: 24px;
+	border: none;
+}
+
+mat-form-field {
+	width: 100%;
+}
+
+.mat-elevation-z8 {
+  height: 370px;
+	box-shadow: 1px 1px 2px 1px grey;
+	width: 100%;
+	background: #eee;
+}
+
+.mat-elevation-z8[_ngcontent-c6]  td[_ngcontent-c6], th[_ngcontent-c6] {
+	width: 500px;
+	font-size: 15px;
+}
+
+.mat-elevation-z8 th {
+	border-bottom: 1px solid lightgrey;
+}
+
+.mat-elevation-z8 tr {
+  color: #02191f;
+}
+
+.mat-elevation-z8 td:hover {
+	background: #f7f7f7;
+	cursor: pointer;
+}
+
+mat-paginator {
+	display: block;
+	width: 100%;
+	box-shadow: 1px 1px 3px 1px grey;
+	background: #eee;
+}
+
+.addmovie a {
+  position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #ffd400;
+	outline: unset;
+}
+
+.addmovie i {
+  padding: 4px;
+	font-size: 30px;
+	border: 1px solid grey;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px 1px grey;
+	width: 30px;
+	text-align: center;
+	background: #A4B1AD;
+}
+
+

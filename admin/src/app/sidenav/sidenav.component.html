@@ -1,0 +1,11 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened>
+        <a routerLink="/categories" routerLinkActive="active" class="fa fa-list">Categories</a>
+        <a routerLink="/movies" routerLinkActive="active" class="fa fa-film">Movies</a>
+        <a routerLink="/actors" routerLinkActive="active" class="fa fa-user">Actors</a>
+    </mat-sidenav> 
+     
+	<mat-sidenav-content>
+        <router-outlet></router-outlet>   
+    </mat-sidenav-content>
+</mat-sidenav-container>

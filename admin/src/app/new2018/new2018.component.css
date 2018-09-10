@@ -1,0 +1,72 @@
+.new2018form {
+    margin: 80px auto;
+    width: 500px;
+    height: 445px;
+    box-shadow: 1px 1px 6px 1px grey;
+    background: #eee;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    color: #616161;
+}
+
+.new2018form .input-wrapper {
+    display: block;
+    top: 15px;
+    margin: 10px auto 7px;
+    width: 70%;
+} 
+
+.option {
+    position: relative;
+    display: block;
+    top: 30px;
+    margin: 10px auto 7px;
+    width: 70%;
+    height: 30px;
+}
+
+button {
+    position: relative;
+    top: 40px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background: unset;
+    outline: unset;
+    cursor: pointer;
+}
+
+i {
+    padding: 7px;
+    margin: 0 auto;
+    width: 20px;
+    font-size: 20px;
+    outline: unset;
+    border: 1px solid grey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 1px grey;
+    color: #ffd400;
+    background-color: #a4b1ad;
+}
+
+.back a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffd400;
+    outline: unset;
+  }
+  
+.back i {
+    padding: 4px;
+    font-size: 30px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 1px grey;
+    width: 30px;
+    text-align: center;
+    background: #A4B1AD;
+  }

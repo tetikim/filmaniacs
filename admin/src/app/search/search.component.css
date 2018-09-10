@@ -1,0 +1,90 @@
+/* form {
+    position: absolute;
+    top: 25px;
+    left: 20%;
+}
+
+.inputbox input {
+    border: 0;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 1px 1px black;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+    transition-delay: 0s, 0.4s, 0s;
+}
+
+
+.inputbox .delete {
+    position: absolute;
+    top: -42%;
+    left: -44%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    color: black;
+    cursor: pointer;
+    transition: left 0.4s ease-in-out;
+    transition-delay: 0s;
+}
+
+.inputbox .delete::before {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    width: 1px;
+    height: 15px;
+    transform: translate(32px, 32px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition-delay: 0.6s;
+    left: -10px;
+}
+
+.inputbox .delete::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    width: 1px;
+    height: 15px;
+    transform: translate(32px, 32px) translate(-50%, -50%) rotate(-45deg) scaleY(0);
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+
+.inputbox input:focus {
+    width: 100%;
+    border-radius: 0;
+    cursor: text;
+    caret-color: #ff7043;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 1px 0px grey;
+    position: relative;
+    top: -7px;
+}
+
+.inputbox input:focus + .delete::before {
+    transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+    transition-delay: 0.1s;
+    height: 20px;
+    top: 12px;
+}
+
+.inputbox input:focus + .delete::after{
+    transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+    transition-delay: 0.1s;
+    height: 20px;
+    top: 12px;
+}
+
+.inputbox input:focus + .delete {
+    left: calc(100% - 12px);
+    transition-delay: 0.1s;
+}
+
+.inputbox .delete:focus {
+    outline: none;
+} */

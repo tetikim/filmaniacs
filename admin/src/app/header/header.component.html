@@ -1,0 +1,9 @@
+<mat-toolbar>
+    <div>
+        <a href="/admin">DashBoard</a>
+	</div>
+	<form name="logoutForm" method="post" action="/admin/index.asp">
+	    <input type="hidden" name="loggedOut" value="1" />
+	    <a href="#" (click)="logout()"><i class="fa fa-times"></i></a>
+	</form>
+</mat-toolbar>

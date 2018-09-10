@@ -1,0 +1,13 @@
+<div class="back">
+	<a routerLink="/categories" routerLinkActive="active"><i class="fa fa-arrow-left"></i></a>
+</div>
+
+<form class="categoryform" name="category" method="post" autocomplete="off" action="/newcategory/">
+    <h1> Add Category</h1>
+
+        <mat-form-field class="input-wrapper">
+            <input matInput type="text" name="category" [(ngModel)]="value" placeholder="Name">
+        </mat-form-field>
+    
+    <button id="submitbtn" type="submit" (click)="getFormData()"><i class="fa fa-check"></i></button>
+</form>
